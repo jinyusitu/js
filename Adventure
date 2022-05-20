@@ -1,0 +1,151 @@
+string_t name, name2;
+string_t cheat, introChoice, middle1Choice, middle2Choice, middle3Choice, end11Choice, end12Choice, end13Choice, end21Choice, end22Choice, end23Choice, end31Choice, end32Choice, end33Choice;
+int x, y;
+
+x = randint(15,20);
+y = randint(15,20);
+
+printf("welcome to the game! You will gain power though out the game!\nWould to like to see the road map or the cheat sheet? enter yes or no.\n");
+scanf("%s", &cheat);
+while(cheat != "yes" && cheat != "no"){
+    printf("Sorry, that is not a choice. Pls enter yes or no.\n");
+scanf("%s", &cheat);
+}
+if(cheat == "yes"){
+    printf("Road 1:fish-dog=3 power.\nRoad 2:fish-cat=0 power.\nRoad 3:fish-sheep=10 power.\nRoad 4:rice-paper=1 power.\nRoad 5:rice-cake=7 power.\nRoad 6:rice-wall=-8 power.\nRoad 7:meat-phone=-1 power.\nRoad 8:meat-potato=13 power.\nRoad 9:meat-noodle=8 power.\n");
+    printf("Let's get started!\n");
+}
+if(cheat == "no"){
+    printf("Let's get started!\n");
+}
+
+
+
+void intro(){
+    printf("You died in a accident, and you were reborn into another world\nIn this world you can eat things to get stronger or gaining power thorugh eating.\nHowever some food are toxic and will drop your power!\nSo becareful to choose what to eat thorugh out the story. Now pls choose your name and your sister's name.\n");
+    printf("pls choose your name.\n");
+    scanf("%s", &name);
+    printf("pls choose your sister's name.\n");
+    scanf("%s", &name2);
+    printf("Now you will be giving a random age from 15 to 20 with ", name2, "!\n");
+    printf("You are ", x ," years old.\n");
+    printf("And ", name2, " is ", y ," years old.\n");
+    printf("Hey, ", name ," there is a food in front of you and ", name2, ". They are\n1. fish\n2. rice\n3. meat\nWhich one would you like to eat?\n");
+    scanf("%s", &introChoice);
+    while(introChoice != "1" && introChoice != "2" && introChoice != "3"){
+        printf("I am sorry, that is not a choice.\nChoose a thing to eat. \n1. fish\n2. rice\n3. meat\nWhich one would you like to eat?\n");
+    scanf("%s", &introChoice);
+    }
+}
+
+void middle1(){
+    printf("you and ", name2, " loved the fish! power + 5. You guys were happy about the food and decide to keep going. \nThere is another food in front of you and ", name2,". Choose another thing to eat. \n1. dog\n2. cat \n3. sheep\n");
+    scanf("%s", &middle1Choice);
+    printf("Nice choice!\n");
+    while(middle1Choice != "1" && middle1Choice != "2" && middle1Choice != "3"){
+        printf("I am sorry, that is not a choice.\nChoose another thing to eat. \n1. dog\n2. cat \n3. sheep\n");
+        scanf("%s", &middle1Choice);
+    }
+}
+
+void middle2(){
+    printf("you and ", name2, " ate the rice, it was not bad. power + 1. \nBut it taste nothing, just rice. You and ", name2 ," feel ok. Look, there is another food in front of you guys! Choose another thing to eat. \n1. paper\n2. cake \n3. wall\n");
+    scanf("%s", &middle2Choice);
+    printf("Nice choice!\n");
+    while(middle2Choice != "1" && middle2Choice != "2" && middle2Choice != "3"){
+        printf("I am sorry, that is not a choice.\nChoose another thing to eat. \n1. paper\n2. cake \n3. wall\n");
+        scanf("%s", &middle2Choice);
+    }
+}
+
+
+void middle3(){
+    printf("you and ", name2, " loved the meat! The meat was tasty. \nBut ", name2 ," eat 3/4 of the meat and you just ate 1/4. power +3. Choose another thing to eat. \n1. phone\n2. potato \n3. noodle\n");
+    scanf("%s", &middle3Choice);
+    printf("Nice choice!\n");
+    while(middle3Choice != "1" && middle3Choice != "2" && middle3Choice != "3"){
+        printf("I am sorry, that is not a choice.\n Choose another thing to eat. \n1. phone\n2. potato \n3. noodle\n");
+        scanf("%s", &middle3Choice);
+    }
+}
+
+
+
+void end11(){
+    printf("You and ", name2 ," hate the dog. It wasn't tasty and bited you and ", name2 ,". power -2.\nYour total power gain though out the adventure was:3. Not bad. \n");
+}
+
+void end12(){
+    printf("You and ", name2 ," hate the cat. It doesn't taste good. And it was hard to catch since the cat run really fast.\nWhich cause you and ", name2 ," to get tired. power -5.\nYour total power gain though out the adventure was:0. You'll get'em next time! \n");
+}
+
+void end13(){
+    printf("You and ", name2 ," love the sheep. It was good.\nAlso enough for you and ", name2 ," because the sheep was huge. power +5.\nYour total power gain though out the adventure was:10. That is a good score! \n");
+}
+
+void end21(){
+    printf("You and ", name2 ," ate the paper. It was paper, so it taste nothing. It also cause you and ", name2 ," hungry. power -0.\nYour total power gain though out the adventure was:1. I think you could do better, try again next time. \n");
+}
+
+void end22(){
+    printf("You and ", name2 ," love the cake. It was tasty! \nAnd ", name2," love to eat sweet things like cake. power +6.\nYour total power gain though out the adventure was:7. This is a good score! \n");
+}
+
+void end23(){
+    printf("You and ", name2 ," can't even swallow the wall. power -9.\nIt was the worst thing that you two have ever eaten. It was really bad.\nYour total power gain though out the adventure was:-8. This is a negative number, pls do better next time.\n");
+}
+
+void end31(){
+    printf("You and ", name2 ," hate the phone. power -4. You were electrocuted when swallowing it. It was defitnily not a good choice to eat.\nYour total power gain thought out the adventure was:-1. Keep on trying, you will get it!\n");
+}
+
+void end32(){
+    printf("You and ", name2 ," really love the potato. power +10. The potato was delicious! It was soft and tasty. Also easy to swallow.\nYour total power gain though out the adventure was:13. WOW! you got the most point! \n");
+}
+
+void end33(){
+    printf("You and ", name2 ," love the noodle. power +5. The noodle was tasty, and ", name2 ," love to eat noodle. ",name2," think this is the best noodle she ever eaten!\nYour total power gain thought out the adventure was:8. Good job!\n");
+}
+
+int main(){
+    intro();
+    if(introChoice == "1"){
+        middle1();
+        if(middle1Choice == "1"){
+            end11();
+        }
+        if(middle1Choice == "2"){
+            end12();
+        }
+        if(middle1Choice == "3"){
+            end13();
+        }
+    }
+    if (introChoice == "2") {
+        middle2();
+        if(middle2Choice == "1"){
+            end21();
+        }
+        if(middle2Choice == "2"){
+            end22();
+        }
+        if(middle2Choice == "3"){
+            end23();
+        }
+    }
+    if (introChoice == "3") {
+        middle3();
+        if(middle3Choice == "1"){
+            end31();
+        }
+        if(middle3Choice == "2"){
+            end32();
+        }
+        if(middle3Choice == "3"){
+            end33();
+        }
+    }
+}
+
+
+
