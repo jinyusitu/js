@@ -1,0 +1,38 @@
+x = input("what is your first name?\n")
+y = input("what is your last name?\n")
+print("Hello there," + x + " " + y + ", nice to meet you")
+print("\n")
+z = int(input("How old are you?\n"))
+if(z >= 16):
+    print(str(z) + " is a good age.\nYou are old enough to drive.")
+elif(z < 16):
+    print(str(z) + " is a good age.\nBut you are not old enough to drive.")
+print("\n")
+a = input("are you good in math yes or no?\n")
+if(a == "yes"):
+    print("I like to hear that!")
+elif(a == "no"):
+    print("I don't like to hear that.")
+print("\n")
+c = float(input("What is the answer for 5-4.5?\n"))
+if(c == 0.5):
+    print("You are correct!")
+else:
+    print("You are not correct.")
+b = float(input("What is the answer for 10-0.55\n"))
+if(b == 9.45):
+    print("You are correct!")
+else:
+    print("You are wrong.")
+print("\n")
+x = int(input("chose a number in 1-1000000,And i will pull a number to see if it you are lucky.\n"))
+import random 
+b = random.randint(1,1000000)
+print(str(b))
+
+
+
+
+
+    
+
