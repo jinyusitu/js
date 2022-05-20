@@ -1,0 +1,19 @@
+#include <linkbot.h>                
+CLinkbotI robot;
+double r = 1.75;
+double tw = 3.69;
+
+
+robot.driveDistance(4.5, r);
+robot.turnLeft(43.5, r, tw);
+robot.driveDistance(7, r);
+robot.turnLeft(45, r, tw);
+robot.driveDistance(22, r);
+robot.turnLeft(45, r, tw);
+robot.driveDistance(7, r);
+robot.turnLeft(43.5, r, tw);
+robot.driveDistance(14.5, r);
+robot.turnLeft(90, r, tw);
+robot.driveDistance(32, r);
+robot.turnLeft(90, r, tw);
+robot.driveDistance(17, r);
